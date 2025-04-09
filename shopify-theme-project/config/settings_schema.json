@@ -1,0 +1,41 @@
+{
+  "name": "Custom Shopping Cart",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Shopping Cart Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_custom_cart",
+      "label": "Enable Custom Shopping Cart",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cart_item_limit",
+      "label": "Maximum Number of Items in Cart",
+      "default": 10,
+      "min": 1,
+      "max": 50
+    },
+    {
+      "type": "color",
+      "id": "cart_background_color",
+      "label": "Cart Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cart_text_color",
+      "label": "Cart Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "textarea",
+      "id": "cart_footer_text",
+      "label": "Footer Text for Cart",
+      "default": "Thank you for shopping with us!"
+    }
+  ]
+}

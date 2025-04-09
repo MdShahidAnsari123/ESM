@@ -1,0 +1,457 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [
+    {
+      "key": "faq",
+      "namespace": "custom",
+      "name": "FAQ",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "ff",
+      "namespace": "custom",
+      "name": "ff",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "new",
+      "namespace": "custom",
+      "name": "new",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "display-resolution",
+      "namespace": "shopify",
+      "name": "Display resolution",
+      "description": "Defines resolution of a digital display, e.g. 1280 x 1024, full HD",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "operating-system",
+      "namespace": "shopify",
+      "name": "Operating system",
+      "description": "Defines the system software a device uses, such as iOS or ChromeOS",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "processor-family",
+      "namespace": "shopify",
+      "name": "Processor family",
+      "description": "Identifies the series or brand of the electronic device's CPU, e.g. Intel Core i7",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "computer-form",
+      "namespace": "shopify",
+      "name": "Computer form",
+      "description": "Defines the physical design or layout of a computer, such as all-in-one or notebook",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "storage-types-supported",
+      "namespace": "shopify",
+      "name": "Storage types supported",
+      "description": "Defines compatible storage systems for electronics, e.g. Hard disk drive (HDD)",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "graphics-card-type",
+      "namespace": "shopify",
+      "name": "Graphics card type",
+      "description": "Specifies the type of graphics card in a computer, e.g. professional, dedicated",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "memory-technology",
+      "namespace": "shopify",
+      "name": "Memory technology",
+      "description": "Specifies the type of memory used in electronic devices, such as DDR or SDRAM",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "keyboard-type",
+      "namespace": "shopify",
+      "name": "Keyboard type",
+      "description": "Specifies the design and functionality of a keyboard, e.g. standard, backlit",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "battery-technology",
+      "namespace": "shopify",
+      "name": "Battery technology",
+      "description": "Specifies the type of battery used in electronics, such as alkaline or lithium-ion",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cosmetic-condition",
+      "namespace": "shopify",
+      "name": "Cosmetic condition",
+      "description": "Defines the wear and condition of electronics, e.g. new, opened-never used",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "data-network",
+      "namespace": "shopify",
+      "name": "Data network",
+      "description": "Specifies the data network compatibility of mobile devices, like LTE or 3G",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sim-card-capability",
+      "namespace": "shopify",
+      "name": "SIM card capability",
+      "description": "Indicates the type of SIM card configuration in mobile devices, e.g. dual, embedded",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "subscription-type",
+      "namespace": "shopify",
+      "name": "Subscription type",
+      "description": "Specifies the type of subscription, typically for mobile devices; e.g. pay as you go, pre-paid",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sleeve-length-type",
+      "namespace": "shopify",
+      "name": "Sleeve length type",
+      "description": "Specifies the style of sleeves on clothing items, such as short or sleeveless",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "age-group",
+      "namespace": "shopify",
+      "name": "Age group",
+      "description": "Defines the target age range for a product, such as adults or kids",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "neckline",
+      "namespace": "shopify",
+      "name": "Neckline",
+      "description": "Used to describe the neck shape of a garment, such as V-neck or boat",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "target-gender",
+      "namespace": "shopify",
+      "name": "Target gender",
+      "description": "Identifies the intended gender for a product, such as female, male or unisex",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "outerwear-clothing-features",
+      "namespace": "shopify",
+      "name": "Outerwear clothing features",
+      "description": "Identifies special characteristics of outerwear, like insulated or waterproof",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fabric",
+      "namespace": "shopify",
+      "name": "Fabric",
+      "description": "Identifies the type of fabric used in a product, for example, cotton or denim",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "accessory-size",
+      "namespace": "shopify",
+      "name": "Accessory size",
+      "description": "Defines the size of an accessory product, such as one size or compact",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "headwear-features",
+      "namespace": "shopify",
+      "name": "Headwear features",
+      "description": "Highlights unique features of headwear, e.g. collapsible, versatile",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "faqs",
+      "namespace": "custom",
+      "name": "Faqs",
+      "description": "select related faq entries",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "watch-display",
+      "namespace": "shopify",
+      "name": "Watch display",
+      "description": "Distinguishes between watch displays, such as digital or analog",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "connectivity-technology",
+      "namespace": "shopify",
+      "name": "Connectivity technology",
+      "description": "Defines the method of data transfer in a product, e.g. Bluetooth, USB",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "smart-watch-features",
+      "namespace": "shopify",
+      "name": "Smart watch features",
+      "description": "Describes the capabilities of a smart watch, such as fitness tracker or waterproof",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "band-color",
+      "namespace": "shopify",
+      "name": "Band color",
+      "description": "Specifies the color of a watch band, e.g. multicolor, rose gold",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "closure-type",
+      "namespace": "shopify",
+      "name": "Closure type",
+      "description": "Defines the method used to fasten or secure a product, such as zipper or buckles",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "occasion-style",
+      "namespace": "shopify",
+      "name": "Occasion style",
+      "description": "Helps categorize products based on occasion, e.g. casual, dress",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "footwear-material",
+      "namespace": "shopify",
+      "name": "Footwear material",
+      "description": "Specifies the type of material used in footwear, such as suede or rubber",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-features",
+      "namespace": "shopify",
+      "name": "Shoe features",
+      "description": "Identifies special characteristics of shoes, such as waterproof or lightweight",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "heel-height-type",
+      "namespace": "shopify",
+      "name": "Heel height type",
+      "description": "Defines the height of a shoe's heel, such as flat or high",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sneaker-style",
+      "namespace": "shopify",
+      "name": "Sneaker style",
+      "description": "Identifies the design or type of sneakers, such as athletic or high-top",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-size",
+      "namespace": "shopify",
+      "name": "Shoe size",
+      "description": "Used to define the size of footwear, e.g. Extra large (XL), 9.5",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "shoe-fit",
+      "namespace": "shopify",
+      "name": "Shoe fit",
+      "description": "Defines the width of footwear, such as narrow or wide",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "size",
+      "namespace": "shopify",
+      "name": "Size",
+      "description": "Used to specify the size of a product, such as 0-3 months or Extra large (XL)",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "ingredients",
+      "namespace": "custom",
+      "name": "Ingredients",
+      "description": "List of product ingredients",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "dietary-preferences",
+      "namespace": "shopify",
+      "name": "Dietary preferences",
+      "description": "Helps identify products suitable for specific diets, e.g. vegan, nut free",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "fruit-source",
+      "namespace": "shopify",
+      "name": "Fruit source",
+      "description": "Identifies whether fruit in drinks is from concentrate or not",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "dietary-supplements",
+      "namespace": "shopify",
+      "name": "Dietary supplements",
+      "description": "Identifies the added nutrients in a product, like calcium or probiotics",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "manufacturer",
+      "namespace": "custom",
+      "name": "Manufacturer",
+      "description": "",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [],
+  "shop": []
+}

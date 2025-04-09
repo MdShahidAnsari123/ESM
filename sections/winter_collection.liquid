@@ -1,0 +1,38 @@
+{% assign collection = collections['winter-collection'] %}
+
+{% schema %}
+{
+  "name": "Winter Collections",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Section Title",
+      "default": "Winter Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Winter Collection",
+    }
+  ]
+}
+{% endschema %}
+
+{% if collection.products.size > 0 %}
+  <div class="winter-collection">
+    <h2>{{ section.settings.title }}</h2>
+    <ul>
+      {% for product in collection.products %}
+        <li>
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | image_url: 'medium' }}" alt="{{ product.title }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
+            <span>{{ product.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% else %}
+  <p>No products found in this collection.</p>
+{% endif %}

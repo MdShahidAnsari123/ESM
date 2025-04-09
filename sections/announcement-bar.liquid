@@ -1,0 +1,107 @@
+<div class="announcement-bar">
+  <div class="content">
+    <span>{{ section.settings.txt1 }}</span>
+    <span class="space">&nbsp;&nbsp;&nbsp;</span>
+    
+    <span class="space">&nbsp;&nbsp;&nbsp;</span>
+    <span>{{ section.settings.txt2 }}</span>
+    <span class="space">&nbsp;&nbsp;&nbsp;</span>
+    
+    <span class="space">&nbsp;&nbsp;&nbsp;</span>
+    <span>{{ section.settings.txt3 }}</span>
+  </div>
+</div>
+
+<style>
+  .announcement-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: {{ section.settings.bgcolor }};
+    color: {{ section.settings.txtcolor }};
+    padding: 10px 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .content {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: {{ section.settings.marqueefontsize }}px;
+    animation: marquee {{ section.settings.marqueefontspeed }}s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .space {
+    display: inline-block;
+    width: 140px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "moving banner",
+  "settings": [
+    {
+      "id": "txt1",
+      "label": "Running Text 1",
+      "type": "text",
+      "default": "End of Season Sale is Now Live."
+    },
+    {
+      "id": "txt2",
+      "label": "Running Text 2",
+      "type": "text",
+      "default": "Enjoy up to 50% Off."
+    },
+    {
+      "id": "txt3",
+      "label": "Running Text 3",
+      "type": "text",
+      "default": "Free delivery over ₹500."
+    },
+    {
+      "id": "bgcolor",
+      "type": "color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "id": "txtcolor",
+      "type": "color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "id": "marqueefontsize",
+      "type": "range",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "label": "Font Size",
+      "default": 16
+    },
+    {
+      "id": "marqueefontspeed",
+      "type": "range",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "label": "Font Speed",
+      "default": 30
+    }
+  ],
+  "presets": [
+    {
+      "name": "movingbanner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,12 @@
+<div class="custom-cart">
+  <h2>Your Shopping Cart</h2>
+  <div class="cart-items">
+    {% for item in cart.items %}
+      {% include 'cart-item', item: item %}
+    {% endfor %}
+  </div>
+  <div class="cart-summary">
+    {% include 'custom-cart-summary' %}
+  </div>
+  <button class="checkout-button">Proceed to Checkout</button>
+</div>

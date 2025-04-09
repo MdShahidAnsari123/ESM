@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="{{ 'custom-cart.css' | asset_url }}">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        {% section 'custom-cart' %}
+        {% include 'custom-cart-summary' %}
+    </div>
+    <script src="{{ 'cart.js' | asset_url }}"></script>
+</body>
+</html>

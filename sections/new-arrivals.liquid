@@ -1,0 +1,69 @@
+<h2>{{ section.settings['heading-text'] }}</h2>
+<div class="new-Container">
+<div class="new-Products-items">
+    {% for block in section.blocks %}
+<img class="new-Img" src="{{ block.settings.image | image_url: width: '1080px'}}">
+    {% endfor %}
+</div> 
+</div>
+<style>
+  .new-Container {
+    padding: 20px;
+    overflow: scroll;
+    text-align: center;
+  }
+  .new-Products-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  .new-Img {
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s ease-in; 
+  }
+  .new-Img:hover {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+  }
+  h2 {
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .new-Container::-webkit-scrollbar { display: none; }
+</style>
+{% schema %}
+  {
+    "name": "New Arrivals",
+    "settings": [
+         {
+          "id": "heading-text",
+          "type": "text",
+          "label": "heading-text"
+        }
+    ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "images",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Banner Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Arrivals"
+    }
+  ]
+}
+{% endschema %}

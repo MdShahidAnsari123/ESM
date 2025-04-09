@@ -1,0 +1,43 @@
+<h2 style="text-align: center;">Shop More</h2>
+{% if section.settings.mainbanner != blank %}
+<img class="mainbanner" src="{{ section.settings.mainbanner | img_url:'1080x'  }}" alt="main banner image">
+{% endif %}
+<!-- <div class="video">{{ section.settings.video | video_tag: controls: true }}</div> -->
+{% assign image = section.settings.mainbanner %}
+ 
+{% render 'Crousel', blocks: section.blocks %}
+<style>
+  .mainbanner {
+    margin-top: 10px;
+    max-width: 60%; 
+    max-height: 300px; 
+    width: auto;
+    height: auto;
+  }
+ 
+ 
+</style>
+{% schema %}
+{
+  "name": "mainbanner",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Banner Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "mainbanner"
+    }
+  ]
+}
+{% endschema %}

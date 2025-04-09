@@ -1,0 +1,9 @@
+<div class="cart-item">
+  <h2 class="cart-item__title">{{ item.product.title }}</h2>
+  <p class="cart-item__price">{{ item.price | money }}</p>
+  <div class="cart-item__quantity">
+    <label for="quantity-{{ item.id }}">Quantity:</label>
+    <input type="number" id="quantity-{{ item.id }}" name="quantity" value="{{ item.quantity }}" min="1" />
+  </div>
+  <button class="cart-item__remove" data-id="{{ item.id }}">Remove</button>
+</div>

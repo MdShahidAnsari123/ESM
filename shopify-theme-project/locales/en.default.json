@@ -1,0 +1,22 @@
+{
+  "general": {
+    "add_to_cart": "Add to Cart",
+    "remove_from_cart": "Remove from Cart",
+    "cart_empty": "Your cart is currently empty.",
+    "cart_items": "Items in your cart",
+    "total_price": "Total Price",
+    "checkout": "Proceed to Checkout",
+    "quantity": "Quantity",
+    "update": "Update",
+    "subtotal": "Subtotal",
+    "continue_shopping": "Continue Shopping"
+  },
+  "errors": {
+    "item_not_found": "The item you are trying to add is not available.",
+    "cart_update_failed": "Failed to update the cart. Please try again."
+  },
+  "success": {
+    "item_added": "Item has been added to your cart.",
+    "item_removed": "Item has been removed from your cart."
+  }
+}

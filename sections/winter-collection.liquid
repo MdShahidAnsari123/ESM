@@ -1,0 +1,69 @@
+<h2>{{ section.settings['heading-text'] }}</h2>
+<div class="new-container">
+<div class="new-products-items">
+    {% for block in section.blocks %}
+<img class="new-img" src="{{ block.settings.image | image_url: width: '1080px'}}">
+    {% endfor %}
+</div>
+</div>
+<style>
+  .new-container {
+    padding: 20px;
+    overflow: scroll;
+    text-align: center;
+  }
+  .new-products-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  .new-img {
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s ease-in; 
+  }
+  .new-img:hover {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+  }
+  h2 {
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .new-container::-webkit-scrollbar { display: none; }
+</style>
+{% schema %}
+  {
+    "name": "Winter Collection",
+    "settings": [
+         {
+          "id": "heading-text",
+          "type": "text",
+          "label": "heading-text"
+        }
+    ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "images",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Banner Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Winter Collections"
+    }
+  ]
+}
+{% endschema %}

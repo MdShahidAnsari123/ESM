@@ -1,0 +1,93 @@
+<footer class="footer">
+  <div class="width">
+    <div class="footer-top">
+      {% for block in section.blocks %}
+        {% if block.type == 'navigation' %}
+          
+          <div class="footer-column">
+            <h2>{{ block.settings.linklist.title }}</h2>
+            {% for link in block.settings.linklist.links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </div>
+          {% elsif block.type =='text'%}
+                    <div class="footer-column">
+            <h2>{{ block.settings.heading}}</h2>
+            {{ block.settings.text}}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="footer-bottom">
+      <p>{{ section.settings.copyright }}</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Fooooter",
+  "settings": [
+    {
+      "id": "copyright",
+      "label": "Copyright text",
+      "type": "text"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "id": "heading_text",
+          "type": "text",
+          "label": "Heading text"
+        },
+        {
+          "id": "subheading_text",
+          "type": "text",
+          "label": "Subheading text"
+        },
+        {
+          "id": "body_text",
+          "type": "richtext",
+          "label": "Body text"
+        }
+      ]
+    },
+    {
+      "name": "Navigation column",
+      "type": "navigation",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "linklist",
+          "label": "Navigation menu"
+        }
+      ]
+    }
+  ],
+    "presets": [
+    {
+      "name": "custom footer",
+      "category": "Footer",
+      "blocks": [
+        {
+          "type": "navigation",
+          "settings": {
+            
+          }
+        }
+      ],
+      "settings": {
+        "copyright": "© 2025 Your Store Name"
+      }
+    }
+  ]
+}
+{% endschema %}

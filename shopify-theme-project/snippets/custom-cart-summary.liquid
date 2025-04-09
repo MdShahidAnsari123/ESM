@@ -1,0 +1,8 @@
+{% assign item_count = cart.item_count %}
+{% assign total_price = cart.total_price | money %}
+
+<div class="custom-cart-summary">
+  <h2>Cart Summary</h2>
+  <p>Total Items: {{ item_count }}</p>
+  <p>Total Price: {{ total_price }}</p>
+</div>

@@ -1,0 +1,69 @@
+{% style %}
+    .custom-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #ffffff;
+      border-bottom: 2px solid #ddd;
+    }
+     
+    .custom-header .logo img {
+      max-width: 150px;
+    }
+     
+    .custom-menu ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+     
+    .custom-menu li {
+      margin-right: 20px;
+    }
+     
+    .custom-menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+       padding: 10px 15px;
+    }
+      .custom-menu a:hover {
+      color: #0073e6;
+    }
+    {% endstyle %}
+     
+    <header class="custom-header">
+      <div class="logo">
+        <a href="{{ shop.url }}">
+          <img src="{{ section.settings.logo | img_url: 'medium' }}" alt="{{ shop.name }}">
+        </a>
+      </div>
+      <nav class="custom-menu">
+        <ul>
+          {% for link in linklists.main-menu.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+     
+    {% schema %}
+    {
+      "name": "Custom Header",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Custom Header"
+        }
+      ]
+    }
+    {% endschema %}
+     
